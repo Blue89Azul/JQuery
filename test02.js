@@ -7,9 +7,9 @@ $('h2').remove();
  
 // 課題２:alertメソッドで確認。
 alert($('#index').text());
-// テキストのみが出力（テキストのみ変更できる）
+// テキストのみが出力（テキストのみ変更可能）
 alert($('#index').html());
-//htmlタグも出力（htmlタグも解釈して出力できる）
+//htmlタグも出力（htmlタグも解釈して出力可能）
 
 
 //課題３
@@ -27,9 +27,10 @@ $("#index").find('li').each(function() {
 //課題5
 $("#index").find('li').each(function() {
     
-$(this).text().after($(this).html($(this).text().length + "文字"));
+$(this).append("<span>[" + $(this).text().length + "文字]</span>");
     
 });
 
-    });
+
+});
 })(jQuery, window);
