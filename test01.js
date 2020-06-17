@@ -2,13 +2,16 @@
 var answer = prompt("正の値か負の値を入れてください。", "");
 
 
-if(answer > 0){
+if (answer > 0) {
     alert("正の値です");
-} else if (answer < 0){
+}
+else if (answer < 0) {
     alert("負の値です");
-} else if (answer == 0) {
+}
+else if (answer == 0) {
     alert("ゼロです");
-} else {
+}
+else {
     alert("数値を入力してください");
 }
 
@@ -17,51 +20,64 @@ if(answer > 0){
 var animals = ["パンダ", "ライオン", "キリン"];
 var i = 0;
 
-while (i < animals.length){
+while (i < animals.length) {
     alert(animals[i]);
     i++;
 }
 
 
 //課題４、５
-var answer = prompt("パンダ、ライオン、キリンのどれが好きですか？")
+var answer = prompt("パンダ、ライオン、キリンのどれが好きですか？");
 
 var animals = ["パンダ", "ライオン", "キリン"];
 
+// for文を使っての課題５記述
+var index = animals.indexOf(answer);
 
-for(var i = 0; i < animals.length; i++ ) {
-    
-        if(answer == "ライオン"){
-        
-        alert( answer + "[" + animals.indexOf(answer) + "]");
+for (var i = 0; i < animals.length; i++) {
+
+    if (answer == "ライオン") {
+        alert(answer + '[' + index + ']');
         break;
-    } 
-    
-        alert(animals[i]);
-    
+    }
+
+    alert(animals[i]);
+
+}
+
+
+// While文使っての課題５記述
+while (i < animals.length) {
+
+    i++;
+
+    if (answer == "ライオン") {
+        alert(answer + '[' + i + ']');
+        break;
+    }
+
+    alert(animals[i]);
+
 }
 
 
 //課題６,７
-　var animals =[
-　    {"name": "パンダ","weight": 80},
-　    {"name": "ライオン","weight": 200},
-　    {"name": "キリン","weight": 300}
-　    ];
+　
+var animals = [　{ "name": "パンダ", "weight": 80 }, 　 { "name": "ライオン", "weight": 200 }, 　 { "name": "キリン", "weight": 300 }　];
 
 var answer = prompt("パンダ、ライオン、キリンのどれかを入力してください");
 
 switch (answer) {
     case 'パンダ':
-        alert("この動物の体重は" + animals[0].weight + "kgです。")
+        alert("この動物の体重は" + animals[0].weight + "kgです。");
         break;
     case 'ライオン':
-        alert("この動物の体重は" + animals[1].weight + "kgです。")
+        alert("この動物の体重は" + animals[1].weight + "kgです。");
         break;
     case 'キリン':
-        alert("この動物の体重は" + animals[2].weight + "kgです。")
+        alert("この動物の体重は" + animals[2].weight + "kgです。");
         break;
-    
+
     default:
         alert("別の動物です！")
 }
@@ -73,28 +89,3 @@ function circle(num) {
 }
 
 alert(circle(2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
