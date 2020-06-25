@@ -40,7 +40,6 @@ for (var i = 0; i < animals.length; i++) {
         break;
     }
 
-
 }
 
 
