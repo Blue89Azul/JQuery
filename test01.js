@@ -32,31 +32,14 @@ var answer = prompt("パンダ、ライオン、キリンのどれが好きで�
 var animals = ["パンダ", "ライオン", "キリン"];
 
 // for文を使っての課題５記述
-var index = animals.indexOf(answer);
 
 for (var i = 0; i < animals.length; i++) {
 
-    if (answer == "ライオン") {
-        alert(answer + '[' + index + ']');
-        break;
-    }
-
-    alert(animals[i]);
-
-}
-
-
-// While文使っての課題５記述
-while (i < animals.length) {
-
-    i++;
-
-    if (answer == "ライオン") {
+    if (answer == animals[i]) {
         alert(answer + '[' + i + ']');
         break;
     }
 
-    alert(animals[i]);
 
 }
 
